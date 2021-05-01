@@ -1,5 +1,5 @@
 class Agent:
-    def __initi__(self):
+    def __init__(self):
         pass
 
     def select_move(self, game_state):
