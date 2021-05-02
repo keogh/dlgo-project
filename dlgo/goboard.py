@@ -61,7 +61,7 @@ class Board():
         self.num_rows = num_rows
         self.num_cols = num_cols
         self._grid = {}
-        self._hash = zobirst.EMPTY_BOARD
+        self._hash = zobrist.EMPTY_BOARD
 
     def place_stone(self, player, point):
         assert self.is_on_grid(point)
@@ -115,7 +115,7 @@ class Board():
 
     def _replace_string(self, new_string):
         for point in new_string.stones:
-            self._grid[points] = new_string
+            self._grid[point] = new_string
 
     def _remove_string(self, string):
         for point in string.stones:
@@ -126,7 +126,7 @@ class Board():
                 if neighbor_string is not string:
                     self._replace_string(neighbor_string.with_liberty(point))
             self._grid[point] = None
-            self._hash ^= zobrist.HASH[point, string.color]
+            self._hash ^= zobrist.HASH_CODE[point, string.color]
 
     def zobrist_hash(self):
         return self._hash
