@@ -1,7 +1,7 @@
 import numpy as np
 
 from dlgo.encoders.base import Encoder
-from dlgo.goboard import Point
+from dlgo.gotypes import Point
 
 class OnePlaneEncoder(Encoder):
     def __init__(self, board_size):
@@ -39,3 +39,6 @@ class OnePlaneEncoder(Encoder):
 
     def shape(self):
         return self.num_planes, self.board_height, self.board_width
+
+def create(board_size):
+    return OnePlaneEncoder(board_size)

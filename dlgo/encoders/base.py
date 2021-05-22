@@ -7,16 +7,16 @@ class Encoder:
     def encode(self, game_state):
         raise NotImplmentedError()
 
-     def encode_point(self, point):
+    def encode_point(self, point):
         raise NotImplmentedError()
 
-     def decode_point_index(self, index):
+    def decode_point_index(self, index):
         raise NotImplmentedError()
 
-     def num_points(self):
+    def num_points(self):
         raise NotImplmentedError()
 
-     def shape(self):
+    def shape(self):
         raise NotImplmentedError()
 
 
