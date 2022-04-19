@@ -32,8 +32,12 @@ RUN pip install \
     tensorflow \
     tensorflowjs \
     keras \
-    h5py
-    # opencv-python
+    h5py \
+    flask \
+    flask-cors \
+    future \
+    six \
+    gomill
 
 # Descomentar si se quiere soporte de face-recognition con dlib
 # Instalamos requisitos para Dlib
