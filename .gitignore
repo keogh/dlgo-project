@@ -50,4 +50,8 @@ ENV/
 env.bak/
 venv.bak/
 
+.bash_history
 dlgo/data/data/
+data
+test_samples.py
+kgs_index.html

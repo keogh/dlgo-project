@@ -2,9 +2,10 @@ from __future__ import print_function
 
 # tag::mcts_go_cnn_simple_preprocessing[]
 import numpy as np
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Conv2D, Flatten  # <1>
+
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Conv2D, Flatten  # <1>
 
 np.random.seed(123)
 X = np.load('../generated_games/features-200.npy')

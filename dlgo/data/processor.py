@@ -8,7 +8,7 @@ import glob
 import shutil
 
 import numpy as np
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 # end::base_imports[]
 
 # tag::dlgo_imports[]
