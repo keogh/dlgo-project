@@ -58,3 +58,5 @@ dlgo/data/data/
 data
 test_samples.py
 kgs_index.html
+agents/pg_agent*
+agents/pg_experience*

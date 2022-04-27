@@ -1,6 +1,5 @@
 from __future__ import absolute_import
-from tensorflow.keras.layers.core import Dense, Activation, Flatten
-from tensorflow.keras.layers.convolutional import Conv2D, ZeroPadding2D
+from tensorflow.keras.layers import Dense, Activation, Flatten, Conv2D, ZeroPadding2D
 
 
 def layers(input_shape):

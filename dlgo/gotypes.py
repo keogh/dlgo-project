@@ -1,4 +1,3 @@
-
 # tag::enumimport[]
 import enum
 # end::enumimport[]
